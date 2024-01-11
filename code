@@ -1,0 +1,129 @@
+
+html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="main">
+        <div id="card">
+            <div id="part-1"></div>
+            <div id="part-2">
+                <div id="overlay"></div>
+            </div>
+            <div id="part-3">
+                <div class="text">
+                    <h1>Nature</h1>
+                    <h1>beauty</h1>
+                    <h1>For</h1>
+                    <h1>so-hee</h1>
+                </div>
+            </div>
+            <div id="small-img">
+            </div>
+            <div id="vertical-text">
+                <h1>Selection winter</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+css
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(81, 81, 233);
+}
+::selection{
+    color: rgba(255, 255, 255, 0.76);
+    background-color: rgba(10, 57, 99, 0.76);
+}
+#card{
+    height: 620px;
+    width: 1400px;
+    margin: 50px;
+    position: absolute;
+    background-color: rgb(26, 78, 121);
+    display: flex;
+}
+#part-1{
+    height: 100%;
+    width: 25%;
+    background-color: rgb(109, 123, 248);
+}
+#part-2{
+    height: 100%;
+    width: 66%;
+    background-color: whitesmoke;
+    background-image: url(https://d2v0j9zp5u17nn.cloudfront.net/wp-content/uploads/2022/01/23185442/Han-So-Hee-4-crop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(230, 247, 255, 0.233);
+}
+#part-3{
+    height: 100%;
+    width: 9%;
+}
+.text{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(0,-50%);   
+}
+.text>h1{
+    font-size: 70px;
+    font-family: monument;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 75px;
+    background-color: transparent;
+    color: rgba(10, 57, 99, 0.76);
+    text-transform: uppercase;
+}
+#small-img{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    background-image: url(https://k-luv.leonparenzo.com/wp-content/uploads/2020/06/han-so-hee-says-she-doesnt-want-to-get-married-after-starring-in-the-world-of-the-married-3.jpg);
+    background-size: cover;
+}
+#vertical-text{
+    position: absolute;
+    top: 40%;
+    right: -25%;
+    transform: rotate(90deg);
+    transform-origin: ;
+    text-transform: uppercase;
+    /*width: 100%;
+    background-color: red;*/
+}
+#vertical-text>h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: transparent;
+    font-family: monument;
+    -webkit-text-stroke-color: rgba(10, 57, 99, 0.76);
+    -webkit-text-stroke-width: 2px;
+}
